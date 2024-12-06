@@ -9,7 +9,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class CiCdPipeline {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.edge.driver", "C:\\Users\\archana devi\\eclipse-workspace\\cicdpipeline\\Edge Driver\\msedgedriver.exe");
 		WebDriver driver=new EdgeDriver();
@@ -20,8 +20,8 @@ public class CiCdPipeline {
 		WebElement password =driver.findElement(By.id("pass"));
 		password .sendKeys("developer@0000");
 		WebElement submit = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block btn-flat']"));
-		
-		
+		submit .click();
+		Thread.sleep(3000);		
 	}
 
 }
