@@ -20,7 +20,6 @@ public class CiCdPipeline {
 		WebElement password =driver.findElement(By.id("pass"));
 		password .sendKeys("developer@0000");
 		WebElement submit = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block btn-flat']"));
-		submit .click();
 		
 		
 	}
