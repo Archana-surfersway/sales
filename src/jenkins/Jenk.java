@@ -17,7 +17,11 @@ public class Jenk {
 		WebElement password =driver.findElement(By.id("pass"));
 		password .sendKeys("abinaya");
 		WebElement submit = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block btn-flat']"));
+		
 		submit .click();
+	
+		
+		
 	}
 
 }
