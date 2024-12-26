@@ -19,7 +19,7 @@ public class Jenk {
 		WebElement submit = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block btn-flat']"));
 		
 		submit .click();
-		submit .click();
+	
 		
 	
 			
