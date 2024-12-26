@@ -7,7 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class Jenk {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.edge.driver", "C:\\Users\\archana devi\\eclipse-workspace\\TEST\\Driver\\msedgedriver.exe");
 		WebDriver driver=new EdgeDriver();
@@ -19,9 +19,10 @@ public class Jenk {
 		WebElement submit = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block btn-flat']"));
 		
 		submit .click();
+		submit .click();
+		
 	
-		
-		
+			
 	}
 
 }
